@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>phonegap & jquery mobile boilerplate</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+
+  <link rel="stylesheet"  href="css/jquery.mobile.structure.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.theme.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <script>
+    var userAgent = navigator.userAgent + '';
+    if (userAgent.indexOf('iPhone') > -1) {
+      document.write('<script src="js/lib/cordova-iphone.js"></sc' + 'ript>');
+      var mobile_system = 'iphone';
+    } else if (userAgent.indexOf('Android') > -1) {
+      document.write('<script src="js/lib/cordova-android.js"></sc' + 'ript>');
+      var mobile_system = 'android';
+    } else {
+      var mobile_system = '';
+    }
+  </script>
+  
+  <!-- <script src="js/lib/jquery.js"></script> -->
+  <!-- your scripts here -->
+  <script src="js/app/app.js"></script>
+<!--   <script src="js/app/bootstrap.js"></script>
+  <script src="js/lib/jquery.mobile.js"></script> -->
+<script>
+$( document ).ready(function() {
+   alert("hi");
+    var defaultLatLng = new google.maps.LatLng(34.0983425, -118.3267434);  // Default to Hollywood, CA when no geolocation support
+    if ( navigator.geolocation ) {
+        function success(pos) {
+            // Location found, show map with these coordinates
+            drawMap(new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
+        }
+        function fail(error) {
+            drawMap(defaultLatLng);  // Failed to find location, show default map
+        }
+        // Find the users current position.  Cache the location for 5 minutes, timeout after 6 seconds
+        navigator.geolocation.getCurrentPosition(success, fail, {maximumAge: 500000, enableHighAccuracy:true, timeout: 6000});
+    } else {
+        drawMap(defaultLatLng);  // No geolocation support, show default map
+    }
+    function drawMap(latlng) {
+        var myOptions = {
+            zoom: 10,
+            center: latlng,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
+        // Add an overlay to the map of current lat/lng
+        var marker = new google.maps.Marker({
+            position: latlng,
+            map: map,
+            title: "Greetings!"
+        });
+    }
+});
+</script>
+<style>
+#map-page, #map-canvas { width: 100%; height: 100%; padding: 0; }
+ /* .searchicon {
+    position: absolute;
+    right: 20%;
+  }
+
+  .usericon{
+  position: absolute;
+  right: 1%;
+  }
+
+  .div{
+    position: relative; 
+    width: 80%; 
+    margin-left: 10%;
+    height: 350px; 
+    background-color: white;
+    border:1px black solid;
+  }
+
+  .bold{
+    font-weight: bold;
+  }
+*/
+</style>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  </head>
+  <body>
+    
+    <div data-role="page" id="map-page" data-url="map-page">
+      
+      <div data-role="header" data-position="fixed" style="background:#990033; text-align:center; color:white; text-shadow: none;">
+        <a class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-notext" style="background:#990033; border: none;" data-back-btn-text="Back" data-add-back-btn="true" href="Page1c.html">Icon only</a>
+        <h1>MAP</h1>
+      </div><!-- /header -->
+
+      <div data-role="ui-content" id="map-canvas" role="main">
+        <!-- map loads here... -->
+      <!-- <form>
+        <fieldset>
+          <legend class="bold"><center>DIRECTIONS</center></legend>
+          <p class="bold"> INSERT MAP</p>
+          <br><br>
+
+          <form action="Page1b.html" data-ajax="false"><input type="submit" value="CONTINUE SHOPPING"/> 
+          </form>
+          <form action="Page1b.html" data-ajax="false"><input type="submit" value="CONTINUE SHOPPING"/>
+          </form>
+        </fieldset>
+      </form>
+    </div>  -->
+  </div><!-- /content -->
+
+      <div data-role="footer" data-position="fixed" style="background:#990033; text-align:center; color:white; text-shadow: none;">
+        <a class="" href="index.html" data-ajax="false"><i class="fa fa-home"></i></a> 
+        <a class="searchicon" href="search1.html" data-ajax="false"><i class="fa fa-search"></i></a> 
+        <a class="usericon" href="profile.html" data-ajax="false"><i class="fa fa-user-circle"></i></a> 
+      </div><!-- /footer -->
+ 
+    </div><!-- /page -->
+    
+  </body>
+</html>

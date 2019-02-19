@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>phonegap & jquery mobile boilerplate</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+
+
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  
+  <script>
+    var userAgent = navigator.userAgent + '';
+    if (userAgent.indexOf('iPhone') > -1) {
+      document.write('<script src="js/lib/cordova-iphone.js"></sc' + 'ript>');
+      var mobile_system = 'iphone';
+    } else if (userAgent.indexOf('Android') > -1) {
+      document.write('<script src="js/lib/cordova-android.js"></sc' + 'ript>');
+      var mobile_system = 'android';
+    } else {
+      var mobile_system = '';
+    }
+  </script>
+  
+  <script src="js/lib/jquery.js"></script>
+  <!-- your scripts here -->
+  <script src="js/app/app.js"></script>
+  <script src="js/app/bootstrap.js"></script>
+  <script src="js/lib/jquery.mobile.js"></script>
+
+  <style>
+.searchicon {
+    position: absolute;
+    right: 20%;
+  }
+
+.usericon{
+  position: absolute;
+  right: 1%;
+  }
+
+  .homeicon{
+    position: absolute;
+    right: 50%;
+  }
+</style>
+  
+  </head>
+  <body>
+    
+    <div data-role="page" id="page1" data-title="Welcome" data-theme="c">
+      
+    <!--   <div data-role="header">
+        <h1>Header</h1> -->
+        <!-- <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext"></a> -->
+        <!-- <a href="#"><i class="fa fa-arrow-alt-circle-left"></i></a>  -->
+      <!-- </div> -->
+      <!-- /header -->
+      <div style="text-align: center">
+        <img src="img/homelogo.jpg" width="90%">
+      </div>
+      
+      <div data-role="main" class="ui-content"> 
+        <!-- <p><center>HANDY MAN</center></p> -->
+        <a class="ui-btn ui-btn-a" href="sign.html">Login</a>
+        <a class="ui-btn ui-btn-b" href="register.html">Register</a>
+        </form>
+      </div><!-- /content -->
+
+      
+ 
+    </div><!-- /page -->
+    
+  </body>
+</html>
