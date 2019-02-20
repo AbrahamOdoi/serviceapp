@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fabfbf55-6d67-4855-a8ed-d74b23cfb64d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/others.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shops.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Page1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page1b.html" beforeDir="false" afterPath="$PROJECT_DIR$/clothing.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page1c.html" beforeDir="false" afterPath="$PROJECT_DIR$/Page1c.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search1.html" beforeDir="false" afterPath="$PROJECT_DIR$/search1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service1.html" beforeDir="false" afterPath="$PROJECT_DIR$/service1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service2.html" beforeDir="false" afterPath="$PROJECT_DIR$/service2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service3.html" beforeDir="false" afterPath="$PROJECT_DIR$/service3.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +16,7 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="327">
-              <caret line="71" column="78" selection-start-line="71" selection-start-column="78" selection-end-line="71" selection-end-column="117" />
+              <caret line="71" column="117" lean-forward="true" selection-start-line="71" selection-start-column="78" selection-end-line="71" selection-end-column="117" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -33,11 +24,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/service1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="69" column="12" lean-forward="true" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="12" />
+            <state relative-caret-position="240">
+              <caret line="82" column="130" selection-start-line="82" selection-start-column="130" selection-end-line="82" selection-end-column="130" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -47,10 +38,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/service3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
+            <state relative-caret-position="-198">
               <caret line="81" column="101" selection-start-line="81" selection-start-column="101" selection-end-line="81" selection-end-column="101" />
               <folding>
                 <element signature="n#style#0;n#h3#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -103,6 +94,7 @@
       <find>data-mini=&quot;true&quot;</find>
       <find>&lt;/a&gt;</find>
       <find>hire</find>
+      <find>data-ajax=&quot;false&quot;</find>
     </findStrings>
     <replaceStrings>
       <replace>data-mini=&quot;false&quot; data-corners=&quot;false&quot;</replace>
@@ -123,9 +115,9 @@
         <option value="$PROJECT_DIR$/others.html" />
         <option value="$PROJECT_DIR$/Page1.html" />
         <option value="$PROJECT_DIR$/search1.html" />
-        <option value="$PROJECT_DIR$/service1.html" />
         <option value="$PROJECT_DIR$/service2.html" />
         <option value="$PROJECT_DIR$/service3.html" />
+        <option value="$PROJECT_DIR$/service1.html" />
       </list>
     </option>
   </component>
@@ -191,12 +183,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1550620149966</updated>
-      <workItem from="1550620151213" duration="14330000" />
+      <workItem from="1550620151213" duration="15031000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14330000" />
+    <option name="totallyTimeSpent" value="15031000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1366" height="728" extended-state="6" />
@@ -297,28 +289,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="71" column="78" selection-start-line="71" selection-start-column="78" selection-end-line="71" selection-end-column="117" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="69" column="12" lean-forward="true" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="12" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Page1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
@@ -345,7 +315,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/service3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
+        <state relative-caret-position="-198">
           <caret line="81" column="101" selection-start-line="81" selection-start-column="101" selection-end-line="81" selection-end-column="101" />
           <folding>
             <element signature="n#style#0;n#h3#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -353,6 +323,28 @@
             <element signature="n#style#0;n#p#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#2;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#center#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="71" column="117" lean-forward="true" selection-start-line="71" selection-start-column="78" selection-end-line="71" selection-end-column="117" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="82" column="130" selection-start-line="82" selection-start-column="130" selection-end-line="82" selection-end-column="130" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
