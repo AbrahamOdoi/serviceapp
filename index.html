@@ -2,7 +2,7 @@
 <html>
   <head>
   <meta charset="utf-8">
-  <title>phonegap & jquery mobile boilerplate</title>
+  <title>Service App</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
 
@@ -68,9 +68,16 @@
       </div>
 
       <div data-role="main" class="ui-content">
-        <!-- <p><center>HANDY MAN</center></p> -->
-          <a href="Page1.html" data-role="button" class="btn-primary rate-btn" data-mini="false" data-corners="false">Find Items</a>
-          <a href="service1.html" data-role="button" class="btn-primary rate-btn" data-mini="false"  data-theme="a" data-corners="false">Find HandyMan</a>
+        <h3 style="text-align: center; color: #1b6d85">LOGIN</h3>
+        <form style="">
+          <h6 style="text-align: center; color: #1b6d85">EMAIL</h6>
+          <input type="email" class="form-control" name="email" id="email" style="background-color: #fffadf;color: #3e6790;font-weight: bolder"/>
+          <h6 style="text-align: center; color: #1b6d85">PASSWORD</h6>
+          <input type="password" class="form-control" name="password" id="password" style="background-color: #fffadf;color: #3e6790;font-weight: bolder"/>
+          <br/>
+          <a href="" data-role="button" data-mini="true" style="color: #1b6d85" id="btnLogin">LOGIN</a>
+          <p style="text-align: center">Don't have an account?</p>
+          <a href="signup.html" style="padding-left: 30%" id="lnkSignup">Sign up Now!</a>
         </form>
       </div><!-- /content -->
 
@@ -79,4 +86,29 @@
     </div><!-- /page -->
 
   </body>
+<script>
+  $("#btnLogin").click(function(){
+    var email = $("#email").val();
+    var password = $("#password").val();
+
+    $.post("http://5.9.86.210/service_app/scripts/login.php",
+            {
+              email: email,
+              password: password
+            },
+            function(data, status){
+              if (data==0){
+                alert("Invalid credentials provided");
+              }else{
+                localStorage.setItem("user", data);
+                window.location="landing.html";
+              }
+            });
+  });
+</script>
+<script>
+  if (navigator.app.exitApp()){
+    localStorage.clear();
+  }
+</script>
 </html>

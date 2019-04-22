@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$USER_HOME$/Downloads/Freematics-master/.idea/Freematics-master.iml" filepath="$USER_HOME$/Downloads/Freematics-master/.idea/Freematics-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../alerts/.idea/alerts.iml" filepath="$PROJECT_DIR$/../alerts/.idea/alerts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../blyte/.idea/blyte.iml" filepath="$PROJECT_DIR$/../blyte/.idea/blyte.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../boxstatus/.idea/boxstatus.iml" filepath="$PROJECT_DIR$/../boxstatus/.idea/boxstatus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../bulksms/.idea/bulksms.iml" filepath="$PROJECT_DIR$/../bulksms/.idea/bulksms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../survey/.idea/crm.iml" filepath="$PROJECT_DIR$/../survey/.idea/crm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pay/etz/.idea/etz.iml" filepath="$PROJECT_DIR$/../pay/etz/.idea/etz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../facebook/.idea/facebook.iml" filepath="$PROJECT_DIR$/../facebook/.idea/facebook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../new-dasboard/.idea/new-dasboard.iml" filepath="$PROJECT_DIR$/../new-dasboard/.idea/new-dasboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pay/.idea/pay.iml" filepath="$PROJECT_DIR$/../pay/.idea/pay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../serviceblyte/.idea/service_app.iml" filepath="$PROJECT_DIR$/../serviceblyte/.idea/service_app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/servicemobile.iml" filepath="$PROJECT_DIR$/.idea/servicemobile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ussds/.idea/ussd.iml" filepath="$PROJECT_DIR$/../ussds/.idea/ussd.iml" />
+    </modules>
+  </component>
+</project>

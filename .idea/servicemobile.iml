@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="blyte" />
+    <orderEntry type="module" module-name="service_app" />
+    <orderEntry type="module" module-name="ussd" />
+    <orderEntry type="module" module-name="boxstatus" />
+    <orderEntry type="module" module-name="alerts" />
+    <orderEntry type="module" module-name="etz" />
+    <orderEntry type="module" module-name="facebook" />
+    <orderEntry type="module" module-name="Freematics-master" />
+    <orderEntry type="module" module-name="new-dasboard" />
+    <orderEntry type="module" module-name="bulksms" />
+    <orderEntry type="module" module-name="pay" />
+  </component>
+</module>

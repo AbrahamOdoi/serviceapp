@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>phonegap & jquery mobile boilerplate</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+
+    <link rel="stylesheet"  href="css/jquery.mobile.structure.css" />
+    <link rel="stylesheet" href="css/jquery.mobile.theme.css" />
+
+    <script>
+        var userAgent = navigator.userAgent + '';
+        if (userAgent.indexOf('iPhone') > -1) {
+            document.write('<script src="js/lib/cordova-iphone.js"></sc' + 'ript>');
+            var mobile_system = 'iphone';
+        } else if (userAgent.indexOf('Android') > -1) {
+            document.write('<script src="js/lib/cordova-android.js"></sc' + 'ript>');
+            var mobile_system = 'android';
+        } else {
+            var mobile_system = '';
+        }
+    </script>
+
+    <script src="js/lib/jquery.js"></script>
+    <!-- your scripts here -->
+    <script src="js/app/app.js"></script>
+    <script src="js/app/bootstrap.js"></script>
+    <script src="js/lib/jquery.mobile.js"></script>
+
+    <!--<link rel="stylesheet"  href="css/jquery.mobile.structure.css" />-->
+    <!--<link rel="stylesheet" href="css/jquery.mobile.theme.css" />-->
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+.searchicon {
+    position: absolute;
+    right: 20%;
+  }
+
+.usericon{
+  position: absolute;
+  right: 1%;
+  }
+
+  .homeicon{
+    position: absolute;
+    right: 50%;
+  }
+</style>
+
+  </head>
+  <body>
+
+    <div data-role="page" id="page1" data-title="Welcome" data-theme="c">
+
+    <!--   <div data-role="header">
+        <h1>Header</h1> -->
+        <!-- <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext"></a> -->
+        <!-- <a href="#"><i class="fa fa-arrow-alt-circle-left"></i></a>  -->
+      <!-- </div> -->
+      <!-- /header -->
+      <div style="text-align: center">
+        <img src="img/tools.png" width="90%">
+      </div>
+
+      <div data-role="main" class="ui-content">
+        <h3 style="text-align: center; color: #1b6d85">SIGN UP</h3>
+        <form style="">
+          <h6 style="text-align: center; color: #1b6d85">Full name</h6 >
+          <input type="text" class="form-control" name="name" id="name" style="background-color: #fffadf;color: #3e6790;font-weight: bolder"/>
+          <h6 style="text-align: center; color: #1b6d85">Age</h6>
+          <input type="text" class="form-control" name="name" id="age" style="background-color: #fffadf;color: #3e6790;font-weight: bolder"/>
+          <h6 style="text-align: center; color: #1b6d85">EMAIL</h6>
+          <input type="email" class="form-control" name="email" id="email" style="background-color: #fffadf;color: #3e6790;font-weight: bolder"/>
+          <h6 style="text-align: center; color: #1b6d85">PASSWORD</h6>
+          <input type="password" class="form-control" name="password" id="password" style="background-color: #fffadf;color: #3e6790;font-weight: bolder"/>
+          <br/>
+          <a data-role="button" data-mini="true" style="color: #1b6d85" id="btnSignup">SIGN UP</a>
+          <p style="text-align: center">Already have an account?</p>
+          <a href="index.html" style="padding-left: 30%" id="lnkSignin">Sign in Now!</a>
+        </form>
+      </div><!-- /content -->
+
+
+
+    </div><!-- /page -->
+
+  </body>
+<script>
+  $("#btnSignup").click(function(){
+    var email = $("#email").val();
+    var password = $("#password").val();
+
+    $.post("http://5.9.86.210/service_app/scripts/signup.php",
+            {
+              email: email,
+              password: password
+            },
+            function(data, status){
+              if (data==1){
+                alert('Email provided is already registered with us');
+              }
+              if (data==2) {
+                window.location="landing.html";
+              }
+              if (data==0){
+                alert("Registration failed");
+              }
+            });
+  });
+</script>
+</html>
