@@ -4,7 +4,8 @@
   <description>A sample Apache Cordova application</description>
   <author email="sarps@sarps.com" href="http://cordova.io"></author>
   <access origin="*"></access>
-  <allow-navigation href="cordova_7-config_ref-*:--*-5.9.86.210-*.html?lang=en" />
+  <access origin="http://5.9.86.210/service_app/scripts/login.php"></access>
+  <allow-navigation href="http://5.9.86.210/service_app/scripts/login.php" />
   <allow-intent href="http://*/*" />
   <allow-intent href="https://*/*" />
   <allow-intent href="tel:*" />
