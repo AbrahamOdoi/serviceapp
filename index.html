@@ -87,18 +87,19 @@
 
   </body>
 <script>
-  alert('yes');
 
   $("#btnLogin").click(function(){
     var email = $("#email").val();
     var password = $("#password").val();
-
+    alert(email);
+    alert(password);
     $.post("http://5.9.86.210/service_app/scripts/login.php",
             {
               email: email,
               password: password
             },
             function(data, status){
+      alert(data);
               if (data==0){
                 alert("Invalid credentials provided");
               }else{
